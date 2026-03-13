@@ -1,0 +1,127 @@
+/* ===== GRADIENT TEXT ===== */
+.gradient-text {
+    background: linear-gradient(135deg, var(--color-accent-1), var(--color-accent-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ===== GLASS EFFECT ===== */
+.glass {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.light .glass {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* ===== GLOW SHADOW ===== */
+.glow-shadow {
+    box-shadow: 0 0 40px rgba(0, 212, 255, 0.15);
+}
+
+/* ===== ACCENT GRADIENT BUTTON ===== */
+.btn-gradient {
+    background: linear-gradient(135deg, var(--color-accent-1), var(--color-accent-2));
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 212, 255, 0.25);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-gradient:hover {
+    box-shadow: 0 8px 30px rgba(0, 212, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+/* ===== SKILL BAR ===== */
+.skill-bar-fill {
+    height: 100%;
+    background: linear-gradient(135deg, var(--color-accent-1), var(--color-accent-2));
+    border-radius: 10px;
+    transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===== TYPED CURSOR ===== */
+.typed-cursor {
+    animation: blink 0.7s step-end infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+/* ===== BADGE PULSE ===== */
+@keyframes pulse-dot {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.5); }
+    50% { box-shadow: 0 0 0 8px rgba(0, 255, 136, 0); }
+}
+.pulse-dot { animation: pulse-dot 2s infinite; }
+
+/* ===== SCROLL MOUSE ===== */
+.scroll-mouse {
+    width: 26px; height: 42px;
+    border: 2px solid var(--color-dark-text-muted);
+    border-radius: 14px;
+    display: flex; justify-content: center;
+    padding-top: 8px;
+}
+.scroll-wheel {
+    width: 3px; height: 8px;
+    background: var(--color-accent-1);
+    border-radius: 3px;
+    animation: scroll-anim 1.5s ease-in-out infinite;
+}
+@keyframes scroll-anim {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(12px); }
+}
+
+/* ===== PRELOADER ===== */
+.preloader {
+    position: fixed; inset: 0; z-index: 99999;
+    display: flex; align-items: center; justify-content: center;
+    transition: opacity 0.6s, visibility 0.6s;
+}
+.preloader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+
+.loader-circle {
+    position: absolute; inset: 0;
+    border: 3px solid transparent;
+    border-top-color: var(--color-accent-1);
+    border-radius: 50%;
+    animation: spin 1.2s linear infinite;
+}
+.loader-circle-inner {
+    position: absolute; inset: 8px;
+    border: 3px solid transparent;
+    border-top-color: var(--color-accent-2);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite reverse;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ===== TIMELINE ===== */
+.timeline-line {
+    position: absolute; left: 50%; top: 0; bottom: 0;
+    width: 2px; transform: translateX(-50%);
+}
+@media (max-width: 768px) {
+    .timeline-line { left: 20px; }
+}
+
+/* ===== PROJECT CARD OVERLAY ===== */
+.project-overlay {
+    position: absolute; inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex; align-items: center; justify-content: center; gap: 16px;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+.project-card-wrapper:hover .project-overlay { opacity: 1; }
+
+/* ===== FORM FLOATING LABELS ===== */
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+    top: -10px;
+    font-size: 0.75rem;
+    color: var(--color-accent-1);
+}
