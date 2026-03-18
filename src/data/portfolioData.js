@@ -1,7 +1,3 @@
-// ============================================================
-//  PIYUMAL SANDEEPA — PORTFOLIO DATA
-// ============================================================
-
 export const personalInfo = {
     name: "Piyumal Sandeepa",
     initials: "PS",
@@ -24,14 +20,14 @@ export const personalInfo = {
     yearsLearning: 3,
     projectCount: 6,
     certCount: 3,
-    coffeeCount: 1000,
+    linesOfCode: 15000,
     resumeUrl: "/resume.pdf",
-   profileImage: "/profile.jpg",
+    profileImage: "/profile.jpg",
     social: {
         github: "https://github.com/PiyumalSandeepa",
-        linkedin: "www.linkedin.com/in/piyumal-sandeepa-9ab976237",
+        linkedin: "https://www.linkedin.com/in/piyumal-sandeepa-9ab976237",
         twitter: "https://twitter.com/",
-        instagram: "https://www.instagram.com/piyumal_sandeepa_99?igsh=MXB3OXVpOGpnbnk1Mg==",
+        instagram: "https://instagram.com/",
     },
 };
 
@@ -47,41 +43,42 @@ export const typingPhrases = [
 
 export const skillsData = {
     frontend: [
-        { name: "React.js / Vite", icon: "react", percent: 88 },
-        { name: "HTML5", icon: "html5", percent: 92 },
-        { name: "CSS3", icon: "css3", percent: 88 },
-        { name: "Tailwind CSS", icon: "tailwind", percent: 82 },
-        { name: "JavaScript (ES6+)", icon: "javascript", percent: 88 },
-        { name: "TypeScript (TSX)", icon: "typescript", percent: 72 },
+        { name: "React.js / Vite", icon: "react" },
+        { name: "JavaScript (ES6+)", icon: "javascript" },
+        { name: "TypeScript (TSX)", icon: "typescript" },
+        { name: "HTML5", icon: "html5" },
+        { name: "CSS3", icon: "css3" },
+        { name: "Tailwind CSS", icon: "tailwind" },
     ],
     backend: [
-        { name: "Node.js / Express", icon: "nodejs", percent: 85 },
-        { name: "Spring Boot", icon: "java", percent: 80 },
-        { name: "Java", icon: "java", percent: 82 },
-        { name: "Python", icon: "python", percent: 68 },
-        { name: "C++", icon: "cpp", percent: 70 },
-        { name: "RESTful APIs", icon: "api", percent: 86 },
+        { name: "Node.js", icon: "nodejs" },
+        { name: "Express.js", icon: "nodejs" },
+        { name: "Spring Boot", icon: "java" },
+        { name: "Java", icon: "java" },
+        { name: "Python", icon: "python" },
+        { name: "C++", icon: "cpp" },
+        { name: "REST APIs", icon: "api" },
     ],
     database: [
-        { name: "MySQL", icon: "mysql", percent: 84 },
-        { name: "Firebase", icon: "firebase", percent: 78 },
-        { name: "MongoDB", icon: "mongodb", percent: 70 },
+        { name: "MySQL", icon: "mysql" },
+        { name: "Firebase", icon: "firebase" },
+        { name: "MongoDB", icon: "mongodb" },
     ],
     mobile: [
-        { name: "Flutter", icon: "flutter", percent: 72 },
-        { name: "React Native (TSX)", icon: "react", percent: 68 },
+        { name: "Flutter", icon: "flutter" },
+        { name: "React Native", icon: "react" },
     ],
     tools: [
-        "Git & GitHub",
-        "Docker",
-        "AWS EC2",
-        "Jenkins",
-        "Jira",
-        "Figma",
-        "JUnit",
-        "Selenium",
-        "SonarQube",
-        "JMeter",
+        { name: "Git & GitHub", icon: "github" },
+        { name: "Docker", icon: "docker" },
+        { name: "AWS EC2", icon: "aws" },
+        { name: "Jenkins", icon: "jenkins" },
+        { name: "Jira", icon: "jira" },
+        { name: "Figma", icon: "figma" },
+        { name: "JUnit", icon: "junit" },
+        { name: "Selenium", icon: "selenium" },
+        { name: "SonarQube", icon: "sonarqube" },
+        { name: "JMeter", icon: "jmeter" },
     ],
 };
 

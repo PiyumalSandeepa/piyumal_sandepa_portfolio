@@ -1,27 +1,33 @@
-import { motion } from "framer-motion";
 import { useScrollReveal } from "../hooks/useScrollReveal";
+
+const gradientStyle = {
+    background: "linear-gradient(135deg, #00d4ff, #7b2ff7)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    backgroundClip: "text",
+};
 
 export default function SectionHeader({ tag, title, highlight }) {
     const [ref, isVisible] = useScrollReveal();
 
     return (
-        <motion.div
+        <div
             ref={ref}
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 30 }}
-            animate={isVisible ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6 }}
+            className={`text-center mb-16 transition-all duration-700 ${
+                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            }`}
         >
-            <span className="font-mono text-sm text-accent-1 tracking-widest">
+            <span className="font-mono text-sm text-[#00d4ff] tracking-[2px]">
                 &lt; {tag} &gt;
             </span>
             <h2 className="text-3xl md:text-4xl font-bold mt-3 mb-4">
-                {title} <span className="gradient-text">{highlight}</span>
+                {title}{" "}
+                <span style={gradientStyle}>{highlight}</span>
             </h2>
             <div
                 className="w-16 h-1 mx-auto rounded-full"
-                style={{ background: "linear-gradient(135deg, var(--color-accent-1), var(--color-accent-2))" }}
+                style={{ background: "linear-gradient(135deg, #00d4ff, #7b2ff7)" }}
             />
-        </motion.div>
+        </div>
     );
 }
