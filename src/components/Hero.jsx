@@ -1,8 +1,15 @@
 import { FiArrowRight, FiSend } from "react-icons/fi";
-import { FaGithub, FaLinkedinIn, FaTwitter, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 import ParticleCanvas from "./ParticleCanvas";
 import { useTypingEffect } from "../hooks/useTypingEffect";
 import { personalInfo, typingPhrases } from "../data/portfolioData";
+
+const gradientStyle = {
+    background: "linear-gradient(135deg, #00d4ff, #7b2ff7)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    backgroundClip: "text",
+};
 
 export default function Hero() {
     const typedText = useTypingEffect(typingPhrases);
@@ -26,9 +33,7 @@ export default function Hero() {
                 {/* Title */}
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4">
                     Hi, I'm{" "}
-                    <span className="bg-gradient-to-r from-[#00d4ff] to-[#7b2ff7] bg-clip-text text-transparent">
-                        {personalInfo.name}
-                    </span>
+                    <span style={gradientStyle}>{personalInfo.name}</span>
                 </h1>
 
                 {/* Typed */}
@@ -40,7 +45,7 @@ export default function Hero() {
                     </span>
                 </div>
 
-                {/* Description - personalized */}
+                {/* Description */}
                 <p className="text-base text-[#a0a0b8] max-w-[620px] mx-auto mb-8 leading-relaxed">
                     Computer Engineering undergraduate at{" "}
                     <span className="text-[#00d4ff] font-medium">University of Ruhuna</span>{" "}
