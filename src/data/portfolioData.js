@@ -29,9 +29,9 @@ export const personalInfo = {
    profileImage: "/profile.jpg",
     social: {
         github: "https://github.com/PiyumalSandeepa",
-        linkedin: "https://linkedin.com/in/piyumalsandeepa",
+        linkedin: "www.linkedin.com/in/piyumal-sandeepa-9ab976237",
         twitter: "https://twitter.com/",
-        instagram: "https://instagram.com/",
+        instagram: "https://www.instagram.com/piyumal_sandeepa_99?igsh=MXB3OXVpOGpnbnk1Mg==",
     },
 };
 
