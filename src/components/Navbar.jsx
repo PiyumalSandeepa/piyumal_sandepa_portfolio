@@ -12,6 +12,13 @@ const navLinks = [
     { name: "Contact", href: "#contact" },
 ];
 
+const gradientStyle = {
+    background: "linear-gradient(135deg, #00d4ff, #7b2ff7)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    backgroundClip: "text",
+};
+
 export default function Navbar() {
     const { theme, toggleTheme } = useTheme();
     const [scrolled, setScrolled] = useState(false);
@@ -49,9 +56,7 @@ export default function Navbar() {
         }`}>
             <div className="max-w-[1200px] mx-auto px-5 flex items-center justify-between">
                 <a href="#home" className="font-mono text-xl font-bold z-10">
-                    <span className="bg-gradient-to-r from-[#00d4ff] to-[#7b2ff7] bg-clip-text text-transparent">
-                        &lt; {personalInfo.initials} /&gt;
-                    </span>
+                    <span style={gradientStyle}>&lt; {personalInfo.initials} /&gt;</span>
                 </a>
 
                 <div className={`${
@@ -88,15 +93,13 @@ export default function Navbar() {
                     <a
                         href={personalInfo.resumeUrl}
                         download
-                        className="bg-gradient-to-r from-[#00d4ff] to-[#7b2ff7] text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center gap-2 shadow-[0_4px_20px_rgba(0,212,255,0.25)] hover:shadow-[0_8px_30px_rgba(0,212,255,0.4)] hover:-translate-y-0.5 transition-all duration-300"
+                        className="text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center gap-2 shadow-[0_4px_20px_rgba(0,212,255,0.25)] hover:shadow-[0_8px_30px_rgba(0,212,255,0.4)] hover:-translate-y-0.5 transition-all duration-300"
+                        style={{ background: "linear-gradient(135deg, #00d4ff, #7b2ff7)" }}
                     >
                         <FiDownload size={14} />
                         <span className="hidden sm:inline">Resume</span>
                     </a>
-                    <button
-                        className="md:hidden z-10 p-1"
-                        onClick={() => setMenuOpen(!menuOpen)}
-                    >
+                    <button className="md:hidden z-10 p-1" onClick={() => setMenuOpen(!menuOpen)}>
                         {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
                     </button>
                 </div>

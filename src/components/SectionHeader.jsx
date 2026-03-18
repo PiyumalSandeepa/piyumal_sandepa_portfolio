@@ -1,10 +1,7 @@
 import { useScrollReveal } from "../hooks/useScrollReveal";
 
-const gradientStyle = {
-    background: "linear-gradient(135deg, #00d4ff, #7b2ff7)",
-    WebkitBackgroundClip: "text",
-    WebkitTextFillColor: "transparent",
-    backgroundClip: "text",
+const highlightStyle = {
+    color: "#ffffff",
 };
 
 export default function SectionHeader({ tag, title, highlight }) {
@@ -20,14 +17,13 @@ export default function SectionHeader({ tag, title, highlight }) {
             <span className="font-mono text-sm text-[#00d4ff] tracking-[2px]">
                 &lt; {tag} &gt;
             </span>
+
             <h2 className="text-3xl md:text-4xl font-bold mt-3 mb-4">
                 {title}{" "}
-                <span style={gradientStyle}>{highlight}</span>
+                <span style={highlightStyle}>{highlight}</span>
             </h2>
-            <div
-                className="w-16 h-1 mx-auto rounded-full"
-                style={{ background: "linear-gradient(135deg, #00d4ff, #7b2ff7)" }}
-            />
+
+            <div className="w-16 h-1 mx-auto rounded-full bg-white" />
         </div>
     );
 }

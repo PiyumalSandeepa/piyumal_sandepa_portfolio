@@ -58,8 +58,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="py-6 text-center text-xs text-dark-text-muted">
-                    © {year} {personalInfo.name}. Crafted with{" "}
-                    <FaHeart className="inline text-accent-1 mx-1" /> and lots of ☕
+                    © {year} {personalInfo.name}
                 </div>
             </div>
         </footer>
