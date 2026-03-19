@@ -32,10 +32,11 @@ export const personalInfo = {
 };
 
 export const typingPhrases = [
-    "Full-Stack Developer",
     "Computer Engineering Student",
-    "React & Spring Boot Developer",
-    "IoT Enthusiast",
+    "Full-Stack Developer",
+    "React Developer",
+    "Node.js & Express Developer"
+    "Machine Learning Enthusiast",
     "DevOps Learner",
     "Problem Solver",
     "IEEE Volunteer Leader",
@@ -45,9 +46,9 @@ export const skillsData = {
     frontend: [
         { name: "React.js / Vite", icon: "react" },
         { name: "JavaScript (ES6+)", icon: "javascript" },
-        { name: "TypeScript (TSX)", icon: "typescript" },
-        { name: "HTML5", icon: "html5" },
         { name: "CSS3", icon: "css3" },
+        { name: "HTML5", icon: "html5" },
+        { name: "TypeScript (TSX)", icon: "typescript" },
         { name: "Tailwind CSS", icon: "tailwind" },
     ],
     backend: [
@@ -75,10 +76,8 @@ export const skillsData = {
         { name: "Jenkins", icon: "jenkins" },
         { name: "Jira", icon: "jira" },
         { name: "Figma", icon: "figma" },
-        { name: "JUnit", icon: "junit" },
-        { name: "Selenium", icon: "selenium" },
-        { name: "SonarQube", icon: "sonarqube" },
-        { name: "JMeter", icon: "jmeter" },
+        {name: "Postman", icon: "postman"},
+        {name: "Bruno", icon: "bruno" },
     ],
 };
 
@@ -93,7 +92,7 @@ export const projectsData = [
         tags: ["React", "Spring Boot", "React Native", "MySQL"],
         category: "web",
         liveUrl: "#",
-        githubUrl: "https://github.com/PiyumalSandeepa",
+        githubUrl: "https://github.com/ushankamesh-devX/dam-disaster-alert-system.git",
     },
     {
         id: 2,
