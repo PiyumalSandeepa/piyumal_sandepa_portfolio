@@ -3,11 +3,11 @@ import {
     FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaPython,
     FaJava, FaGitAlt, FaDocker, FaFigma,
     FaCss3, FaAws, FaJenkins, FaBug, FaVial, FaSearchPlus,
-    FaTachometerAlt
+    FaTachometerAlt, FaPaperPlane, FaRocket
 } from "react-icons/fa";
 import {
     SiTypescript, SiCplusplus, SiFlutter,
-    SiMysql, SiFirebase, SiMongodb, SiJira
+    SiMysql, SiFirebase, SiMongodb, SiJira, SiPostman
 } from "react-icons/si";
 import SectionHeader from "./SectionHeader";
 import { useScrollReveal } from "../hooks/useScrollReveal";
@@ -35,6 +35,8 @@ const allIcons = {
     jenkins: FaJenkins,
     jira: SiJira,
     figma: FaFigma,
+    postman: SiPostman,
+    bruno: FaRocket,
     junit: FaVial,
     selenium: FaBug,
     sonarqube: FaSearchPlus,

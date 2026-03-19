@@ -1,3 +1,7 @@
+// ============================================================
+//  PIYUMAL SANDEEPA — PORTFOLIO DATA
+// ============================================================
+
 export const personalInfo = {
     name: "Piyumal Sandeepa",
     initials: "PS",
@@ -8,25 +12,24 @@ export const personalInfo = {
     degree: "BSc (Hons) Computer Engineering",
     university: "University of Ruhuna",
     bio: [
-        `Undergraduate in Computer Engineering with a strong interest in software development, 
-     problem-solving, and machine learning. Skilled in full-stack web development and database 
-     management, with hands-on experience building practical applications and exploring 
-     data-driven solutions.`,
-        `Actively involved in IEEE volunteering and event coordination, which has helped develop 
-     strong leadership, communication, and teamwork skills. Highly motivated, adaptable, and 
-     committed to continuous learning, with a focus on applying modern technologies to solve 
-     real-world problems.`,
+        `Computer Engineering undergraduate at the University of Ruhuna with a strong 
+     foundation in full-stack web development, IoT systems, and DevOps practices. 
+     Experienced in building production-ready applications using React, Node.js, 
+     Express, Spring Boot, and cloud technologies like AWS and Docker.`,
+        `Vice Chairman of IEEE IAS Ruhuna Student Chapter with proven leadership in 
+     organizing tech events and mentoring peers. Passionate about solving real-world 
+     problems through clean code, automation, and data-driven solutions. Actively 
+     seeking software engineering internship opportunities to apply and expand my skills.`,
     ],
     yearsLearning: 3,
-    projectCount: 10,
+    projectCount: 6,
     certCount: 5,
-    linesOfCode: 15000,
+    linesOfCode: 20000,
     resumeUrl: "/resume.pdf",
     profileImage: "/profile.jpg",
     social: {
         github: "https://github.com/PiyumalSandeepa",
         linkedin: "https://www.linkedin.com/in/piyumal-sandeepa-9ab976237",
-        twitter: "https://twitter.com/",
         instagram: "https://www.instagram.com/piyumal_sandeepa_99?igsh=MXB3OXVpOGpnbnk1Mg==",
     },
 };
@@ -35,7 +38,8 @@ export const typingPhrases = [
     "Computer Engineering Student",
     "Full-Stack Developer",
     "React Developer",
-    "Node.js & Express Developer"
+    "Node.js & Express Developer",
+    "IoT Enthusiast",
     "Machine Learning Enthusiast",
     "DevOps Learner",
     "Problem Solver",
@@ -46,9 +50,9 @@ export const skillsData = {
     frontend: [
         { name: "React.js / Vite", icon: "react" },
         { name: "JavaScript (ES6+)", icon: "javascript" },
-        { name: "CSS3", icon: "css3" },
-        { name: "HTML5", icon: "html5" },
         { name: "TypeScript (TSX)", icon: "typescript" },
+        { name: "HTML5", icon: "html5" },
+        { name: "CSS3", icon: "css3" },
         { name: "Tailwind CSS", icon: "tailwind" },
     ],
     backend: [
@@ -66,8 +70,8 @@ export const skillsData = {
         { name: "MongoDB", icon: "mongodb" },
     ],
     mobile: [
-        { name: "Flutter", icon: "flutter" },
-        { name: "React Native", icon: "react" },
+        { name: "Flutter / Dart", icon: "flutter" },
+        { name: "React Native (TSX)", icon: "react" },
     ],
     tools: [
         { name: "Git & GitHub", icon: "github" },
@@ -76,8 +80,12 @@ export const skillsData = {
         { name: "Jenkins", icon: "jenkins" },
         { name: "Jira", icon: "jira" },
         { name: "Figma", icon: "figma" },
-        {name: "Postman", icon: "postman"},
-        {name: "Bruno", icon: "bruno" },
+        { name: "Postman", icon: "postman" },
+        { name: "Bruno", icon: "bruno" },
+        { name: "JUnit", icon: "junit" },
+        { name: "Selenium", icon: "selenium" },
+        { name: "SonarQube", icon: "sonarqube" },
+        { name: "JMeter", icon: "jmeter" },
     ],
 };
 
@@ -86,10 +94,10 @@ export const projectsData = [
         id: 1,
         title: "Dam Break Flood Early Warning System",
         description:
-            "Web & mobile-based early warning system for dam safety monitoring and emergency flood risk management. Built with React (Vite), Spring Boot, React Native (TSX), MySQL, and RESTful APIs.",
+            "Web & mobile-based early warning system for dam safety monitoring and emergency flood risk management. Built with React (Vite), Spring Boot, React Native (TSX), MySQL, and RESTful APIs. Includes community feedback and emergency response coordination.",
         image:
             "https://images.unsplash.com/photo-1541185934-01b600ea069c?w=600&h=400&fit=crop&auto=format",
-        tags: ["React", "Spring Boot", "React Native", "MySQL"],
+        tags: ["React", "Spring Boot", "React Native", "MySQL", "REST API"],
         category: "web",
         liveUrl: "#",
         githubUrl: "https://github.com/ushankamesh-devX/dam-disaster-alert-system.git",
@@ -98,61 +106,61 @@ export const projectsData = [
         id: 2,
         title: "DriveLock – Smart Anti-Theft Vehicle Security",
         description:
-            "Web-based admin dashboard for real-time vehicle monitoring with IoT integration (ESP32, Raspberry Pi, GPS, RFID). Features GPS tracking, face recognition, and vehicle status monitoring.",
+            "Real-time vehicle monitoring dashboard with IoT integration (ESP32, Raspberry Pi, GPS, RFID). Features GPS tracking, face recognition door unlock, and vehicle status monitoring via web dashboard.",
         image:
             "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop&auto=format",
-        tags: ["React", "Node.js", "Firebase", "IoT"],
+        tags: ["React", "Node.js", "Firebase", "ESP32", "IoT"],
         category: "web",
         liveUrl: "#",
-        githubUrl: "https://github.com/PiyumalSandeepa",
+        githubUrl: "https://github.com/PiyumalSandeepa/vehicle-security-system.git",
     },
     {
         id: 3,
         title: "RecipeHub – DevOps Project",
         description:
-            "Containerized full-stack web app deployed on AWS EC2 using Docker. Automated CI/CD pipelines with Jenkins and GitHub for streamlined integration, build, and deployment.",
+            "Containerized full-stack web app deployed on AWS EC2 using Docker and Docker Hub. Automated CI/CD pipelines with Jenkins and GitHub for seamless code integration, build, and deployment.",
         image:
             "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=600&h=400&fit=crop&auto=format",
-        tags: ["React", "Node.js", "Docker", "AWS", "Jenkins"],
+        tags: ["React", "Node.js", "Docker", "AWS", "Jenkins", "CI/CD"],
         category: "devops",
         liveUrl: "#",
-        githubUrl: "https://github.com/PiyumalSandeepa",
+        githubUrl: "https://github.com/PiyumalSandeepa/Recipehub-repo.git",
     },
     {
         id: 4,
         title: "Online Concert Ticket Booking System",
         description:
-            "Full-stack event ticket booking app with JWT authentication, role-based access control, event browsing, and secure ticket booking. Responsive UI with React & Vite.",
+            "Full-stack event ticket booking app with JWT authentication, role-based access control, event browsing, and secure ticket booking. Responsive UI with React & Vite, RESTful backend with Express.js.",
         image:
             "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=600&h=400&fit=crop&auto=format",
         tags: ["React", "Node.js", "Express", "MySQL", "JWT"],
         category: "web",
         liveUrl: "#",
-        githubUrl: "https://github.com/PiyumalSandeepa",
+        githubUrl: "https://github.com/PiyumalSandeepa/Ticket-Booking-System.git",
     },
     {
         id: 5,
         title: "Lost & Find Mobile Application",
         description:
-            "Mobile app to report lost/found items with direct communication between owners and finders. Features image uploads, item status updates, and user profile management.",
+            "Mobile app for reporting lost/found items with direct communication between owners and finders. Features image uploads, item status tracking, and user profile management with Firebase backend.",
         image:
             "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop&auto=format",
         tags: ["Flutter", "Firebase", "Dart"],
         category: "mobile",
         liveUrl: "#",
-        githubUrl: "https://github.com/PiyumalSandeepa",
+        githubUrl: "https://github.com/Kavi-Z/Lost_And_Found_Mobile_App.git",
     },
     {
         id: 6,
         title: "Software Testing & QA – To-Do App",
         description:
-            "Implemented TDD with JUnit, BDD with Cucumber, UI testing with Selenium, load testing with JMeter, and code quality analysis with SonarQube in a CI pipeline.",
+            "Comprehensive testing project implementing TDD with JUnit, BDD with Cucumber, UI testing with Selenium, load testing with JMeter, and code quality analysis with SonarQube in a GitHub Actions CI pipeline.",
         image:
             "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop&auto=format",
-        tags: ["Spring Boot", "JUnit", "Selenium", "Jenkins"],
+        tags: ["Spring Boot", "JUnit", "Selenium", "SonarQube", "CI/CD"],
         category: "devops",
         liveUrl: "#",
-        githubUrl: "https://github.com/PiyumalSandeepa",
+        githubUrl: "https://github.com/PiyumalSandeepa/QA--To-Do-List.git",
     },
 ];
 
