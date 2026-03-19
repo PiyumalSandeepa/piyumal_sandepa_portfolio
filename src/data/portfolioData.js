@@ -18,8 +18,8 @@ export const personalInfo = {
      real-world problems.`,
     ],
     yearsLearning: 3,
-    projectCount: 6,
-    certCount: 3,
+    projectCount: 10,
+    certCount: 5,
     linesOfCode: 15000,
     resumeUrl: "/resume.pdf",
     profileImage: "/profile.jpg",
@@ -27,7 +27,7 @@ export const personalInfo = {
         github: "https://github.com/PiyumalSandeepa",
         linkedin: "https://www.linkedin.com/in/piyumal-sandeepa-9ab976237",
         twitter: "https://twitter.com/",
-        instagram: "https://instagram.com/",
+        instagram: "https://www.instagram.com/piyumal_sandeepa_99?igsh=MXB3OXVpOGpnbnk1Mg==",
     },
 };
 
