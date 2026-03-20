@@ -1,6 +1,3 @@
-// ============================================================
-//  PIYUMAL SANDEEPA — PORTFOLIO DATA
-// ============================================================
 
 export const personalInfo = {
     name: "Piyumal Sandeepa",
@@ -22,10 +19,10 @@ export const personalInfo = {
      seeking software engineering internship opportunities to apply and expand my skills.`,
     ],
     yearsLearning: 3,
-    projectCount: 6,
+    projectCount: 10,
     certCount: 5,
     linesOfCode: 20000,
-    resumeUrl: "/resume.pdf",
+    resumeUrl: "/piyumal_sandeepa_CV.pdf",
     profileImage: "/profile.jpg",
     social: {
         github: "https://github.com/PiyumalSandeepa",
@@ -50,10 +47,9 @@ export const skillsData = {
     frontend: [
         { name: "React.js / Vite", icon: "react" },
         { name: "JavaScript (ES6+)", icon: "javascript" },
-        { name: "TypeScript (TSX)", icon: "typescript" },
         { name: "HTML5", icon: "html5" },
         { name: "CSS3", icon: "css3" },
-        { name: "Tailwind CSS", icon: "tailwind" },
+        { name: "TypeScript (TSX)", icon: "typescript" },
     ],
     backend: [
         { name: "Node.js", icon: "nodejs" },
@@ -82,10 +78,6 @@ export const skillsData = {
         { name: "Figma", icon: "figma" },
         { name: "Postman", icon: "postman" },
         { name: "Bruno", icon: "bruno" },
-        { name: "JUnit", icon: "junit" },
-        { name: "Selenium", icon: "selenium" },
-        { name: "SonarQube", icon: "sonarqube" },
-        { name: "JMeter", icon: "jmeter" },
     ],
 };
 
@@ -96,7 +88,7 @@ export const projectsData = [
         description:
             "Web & mobile-based early warning system for dam safety monitoring and emergency flood risk management. Built with React (Vite), Spring Boot, React Native (TSX), MySQL, and RESTful APIs. Includes community feedback and emergency response coordination.",
         image:
-            "https://images.unsplash.com/photo-1541185934-01b600ea069c?w=600&h=400&fit=crop&auto=format",
+            "https://www.attractionsinsrilanka.com/wp-content/uploads/2020/05/Victoria-Dam1.jpg",
         tags: ["React", "Spring Boot", "React Native", "MySQL", "REST API"],
         category: "web",
         liveUrl: "#",
