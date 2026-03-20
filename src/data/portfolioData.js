@@ -108,7 +108,7 @@ export const projectsData = [
         description:
             "Real-time vehicle monitoring dashboard with IoT integration (ESP32, Raspberry Pi, GPS, RFID). Features GPS tracking, face recognition door unlock, and vehicle status monitoring via web dashboard.",
         image:
-            "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop&auto=format",
+            "https://lh3.googleusercontent.com/gg-dl/AOI_d_-Tb996nV9LKc5RE3djbrvGv6-MDmBnkWTmrJKrWZHcxBguUaakeH9v_osopFLbH55xjM6_TZk_uyT_Be61HrFb-pN1tX2_hTaQKco21zuqkTxCcnKFy8HUjNAEUwBY2t__H_Sgt1xtVRu-w8BfuB0H7hgAvOUkvj3105tmdM5z7LMxKA=s1024-rj",
         tags: ["React", "Node.js", "Firebase", "ESP32", "IoT"],
         category: "web",
         liveUrl: "#",
