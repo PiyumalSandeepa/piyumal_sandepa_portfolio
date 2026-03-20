@@ -22,7 +22,7 @@ export const personalInfo = {
     projectCount: 10,
     certCount: 5,
     linesOfCode: 20000,
-    resumeUrl: "/piyumal_sandeepa_CV.pdf",
+    resumeUrl: "/Piyumal Sandeepa_CV .pdf",
     profileImage: "/profile.jpg",
     social: {
         github: "https://github.com/PiyumalSandeepa",
