@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { FiExternalLink } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
 import SectionHeader from "./SectionHeader";
@@ -8,6 +9,7 @@ const categories = ["all", "web", "mobile", "devops"];
 
 export default function Projects() {
     const [filter, setFilter] = useState("all");
+    const navigate = useNavigate();
 
     const filtered = filter === "all" ? projectsData : projectsData.filter((p) => p.category === filter);
 
@@ -24,9 +26,14 @@ export default function Projects() {
                             onClick={() => setFilter(cat)}
                             className={`px-6 py-2 rounded-full text-sm font-medium border transition-all duration-300 ${
                                 filter === cat
-                                    ? "bg-gradient-to-r from-[#00d4ff] to-[#7b2ff7] text-white border-transparent shadow-[0_4px_15px_rgba(0,212,255,0.25)]"
+                                    ? "text-white border-transparent shadow-[0_4px_15px_rgba(0,212,255,0.25)]"
                                     : "border-[rgba(255,255,255,0.07)] text-[#a0a0b8] hover:border-[#00d4ff] hover:text-[#00d4ff]"
                             }`}
+                            style={
+                                filter === cat
+                                    ? { background: "linear-gradient(135deg, #00d4ff, #7b2ff7)" }
+                                    : {}
+                            }
                         >
                             {cat === "devops" ? "DevOps / QA" : cat.charAt(0).toUpperCase() + cat.slice(1)}
                         </button>
@@ -49,19 +56,24 @@ export default function Projects() {
                                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[600ms]"
                                 />
                                 <div className="absolute inset-0 bg-black/70 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    <a
-                                        href={project.liveUrl}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="w-12 h-12 rounded-full bg-gradient-to-r from-[#00d4ff] to-[#7b2ff7] flex items-center justify-center text-white hover:scale-110 transition-transform"
+                                    {/* View Details Button */}
+                                    <button
+                                        onClick={() => navigate(`/project/${project.id}`)}
+                                        className="w-12 h-12 rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform"
+                                        style={{ background: "linear-gradient(135deg, #00d4ff, #7b2ff7)" }}
+                                        title="View Details"
                                     >
                                         <FiExternalLink />
-                                    </a>
+                                    </button>
+                                    {/* GitHub Button */}
                                     <a
                                         href={project.githubUrl}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="w-12 h-12 rounded-full bg-gradient-to-r from-[#00d4ff] to-[#7b2ff7] flex items-center justify-center text-white hover:scale-110 transition-transform"
+                                        className="w-12 h-12 rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform"
+                                        style={{ background: "linear-gradient(135deg, #00d4ff, #7b2ff7)" }}
+                                        title="View Source Code"
+                                        onClick={(e) => e.stopPropagation()}
                                     >
                                         <FaGithub />
                                     </a>
@@ -81,7 +93,15 @@ export default function Projects() {
                                     ))}
                                 </div>
                                 <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
-                                <p className="text-sm text-[#a0a0b8] leading-relaxed">{project.description}</p>
+                                <p className="text-sm text-[#a0a0b8] leading-relaxed mb-4">{project.description}</p>
+
+                                {/* View Details Link */}
+                                <button
+                                    onClick={() => navigate(`/project/${project.id}`)}
+                                    className="text-[#00d4ff] text-sm font-medium hover:underline flex items-center gap-1 transition-all duration-300"
+                                >
+                                    View Details <FiExternalLink size={14} />
+                                </button>
                             </div>
                         </div>
                     ))}

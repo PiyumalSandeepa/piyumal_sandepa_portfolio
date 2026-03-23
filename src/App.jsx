@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ThemeProvider from "./components/ThemeProvider";
 import Preloader from "./components/Preloader";
 import ScrollProgress from "./components/ScrollProgress";
@@ -10,10 +11,11 @@ import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
+import ProjectDetail from "./components/ProjectDetail";
 
-export default function App() {
+function HomePage() {
     return (
-        <ThemeProvider>
+        <>
             <Preloader />
             <ScrollProgress />
             <Navbar />
@@ -25,6 +27,19 @@ export default function App() {
             <Contact />
             <Footer />
             <BackToTop />
+        </>
+    );
+}
+
+export default function App() {
+    return (
+        <ThemeProvider>
+            <Router>
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/project/:id" element={<ProjectDetail />} />
+                </Routes>
+            </Router>
         </ThemeProvider>
     );
 }
