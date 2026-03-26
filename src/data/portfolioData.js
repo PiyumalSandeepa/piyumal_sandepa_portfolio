@@ -41,7 +41,6 @@ export const typingPhrases = [
     "Full-Stack Developer",
     "React Developer",
     "Node.js & Express Developer",
-    "IoT Enthusiast",
     "Machine Learning Enthusiast",
     "DevOps Learner",
     "Problem Solver",
@@ -95,7 +94,7 @@ export const projectsData = [
         image:
             "https://www.attractionsinsrilanka.com/wp-content/uploads/2020/05/Victoria-Dam1.jpg",
         tags: ["React", "Spring Boot", "React Native", "MySQL", "REST API"],
-        category: "web",
+        category: ["web", "mobile"],
         liveUrl: "#",
         githubUrl: "https://github.com/ushankamesh-devX/dam-disaster-alert-system.git",
         details: {
@@ -107,12 +106,12 @@ export const projectsData = [
             platforms to provide seamless communication between authorities and the public, ensuring rapid 
             response during critical dam break scenarios.`,
             features: [
-                "Real-time dam safety monitoring dashboard with live sensor data visualization",
+                "Real-time dam safety monitoring dashboard with data visualization",
                 "Mobile app for community alerts and emergency notifications using React Native (TSX)",
                 "RESTful API architecture connecting frontend, backend, and mobile platforms",
                 "Community feedback system for reporting ground-level observations",
                 "Emergency response guidance and coordination with local authorities",
-                "MySQL database for storing sensor readings, alerts, and user data",
+                "MySQL database for storing All data related to dam conditions, alerts,news and user feedback",
                 "API testing and validation using Bruno for system integration",
             ],
             technologies: [
@@ -124,7 +123,7 @@ export const projectsData = [
                 { name: "Bruno", purpose: "API testing and documentation" },
             ],
             challenges: [
-                "Integrating real-time sensor data with web and mobile platforms simultaneously",
+                "Integrating real-time data with web and mobile platforms simultaneously",
                 "Designing a reliable alert system that works under emergency network conditions",
                 "Building a unified API that serves both web and mobile clients efficiently",
             ],
