@@ -128,8 +128,8 @@ export const projectsData = [
                 "Building a unified API that serves both web and mobile clients efficiently",
             ],
             screenshots: [
-                "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop&auto=format",
-                "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop&auto=format",
+                "/dam-dashboard.png",
+                "/dam-mobile.png",
             ],
         },
     },
@@ -205,9 +205,9 @@ export const projectsData = [
                 "Full-stack recipe management application with CRUD operations",
                 "Docker containerization for consistent deployment across environments",
                 "Docker Hub integration for image storage and version management",
-                "Automated CI/CD pipeline with Jenkins for continuous deployment",
+                "Automated CI/CD pipeline with Jenkins",
                 "AWS EC2 deployment with production-grade configuration",
-                "GitHub webhook integration for automatic build triggers",
+                "GitHub Actions integration for automatic build and deployment",
                 "RESTful API with Express.js backend and MySQL database",
                 "Responsive React frontend with recipe browsing and search",
             ],
@@ -227,8 +227,8 @@ export const projectsData = [
                 "Setting up secure AWS EC2 instances with proper security groups and access controls",
             ],
             screenshots: [
-                "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=800&h=500&fit=crop&auto=format",
-                "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=500&fit=crop&auto=format",
+                "/dockerize login page.png",
+                "/Dockerize catelog page.png",
             ],
         },
     },
@@ -254,11 +254,9 @@ export const projectsData = [
             features: [
                 "User registration and login with JWT-based authentication",
                 "Role-based access control (Admin, User) for different functionalities",
-                "Event browsing with search, filter, and category options",
-                "Interactive seat selection and ticket booking workflow",
-                "Secure payment processing and booking confirmation",
+                "Interactive ticket booking workflow",
+                "Payment processing and booking confirmation",
                 "Admin panel for event management (create, edit, delete events)",
-                "Booking history and e-ticket generation for users",
                 "Responsive UI built with React and Vite for fast performance",
             ],
             technologies: [
@@ -271,9 +269,6 @@ export const projectsData = [
                 { name: "Bcrypt", purpose: "Password hashing and security" },
             ],
             challenges: [
-                "Implementing secure JWT token refresh mechanism to prevent session hijacking",
-                "Designing a database schema that handles concurrent seat bookings without conflicts",
-                "Building a responsive seat selection UI that works across all device sizes",
             ],
             screenshots: [
                 "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=800&h=500&fit=crop&auto=format",

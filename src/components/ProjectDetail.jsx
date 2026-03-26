@@ -148,7 +148,7 @@ export default function ProjectDetail() {
                 {/* About the Project */}
                 <div className="mb-12">
                     <h2 className="text-2xl font-bold mb-4">
-                        About <span style={gradientStyle}>the Project</span>
+                        About the Project
                     </h2>
                     <p className="text-[#a0a0b8] leading-relaxed text-base whitespace-pre-line">
                         {details.longDescription}
@@ -158,7 +158,7 @@ export default function ProjectDetail() {
                 {/* Key Features */}
                 <div className="mb-12">
                     <h2 className="text-2xl font-bold mb-6">
-                        Key <span style={gradientStyle}>Features</span>
+                        Key Features
                     </h2>
                     <div className="grid gap-3">
                         {details.features.map((feature, i) => (
@@ -178,7 +178,7 @@ export default function ProjectDetail() {
                 {/* Technologies Used */}
                 <div className="mb-12">
                     <h2 className="text-2xl font-bold mb-6">
-                        Technologies <span style={gradientStyle}>Used</span>
+                        Technologies Used
                     </h2>
                     <div className="grid sm:grid-cols-2 gap-4">
                         {details.technologies.map((tech, i) => (
@@ -204,7 +204,7 @@ export default function ProjectDetail() {
                 {/* Challenges */}
                 <div className="mb-12">
                     <h2 className="text-2xl font-bold mb-6">
-                        Challenges <span style={gradientStyle}>& Solutions</span>
+                        Challenges & Solutions
                     </h2>
                     <div className="grid gap-4">
                         {details.challenges.map((challenge, i) => (
@@ -225,7 +225,7 @@ export default function ProjectDetail() {
                 {details.screenshots && details.screenshots.length > 0 && (
                     <div className="mb-12">
                         <h2 className="text-2xl font-bold mb-6">
-                            Project <span style={gradientStyle}>Screenshots</span>
+                            Project Screenshots
                         </h2>
                         <div className="grid sm:grid-cols-2 gap-4">
                             {details.screenshots.map((img, i) => (
@@ -245,7 +245,7 @@ export default function ProjectDetail() {
                 {/* Other Projects */}
                 <div className="mt-16 pt-12 border-t border-[rgba(255,255,255,0.07)]">
                     <h2 className="text-2xl font-bold mb-6">
-                        Other <span style={gradientStyle}>Projects</span>
+                        Other Projects
                     </h2>
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                         {projectsData
