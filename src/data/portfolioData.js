@@ -9,15 +9,20 @@ export const personalInfo = {
     degree: "BSc (Hons) Computer Engineering",
     university: "University of Ruhuna",
     bio: [
-        `Computer Engineering undergraduate at the University of Ruhuna with a strong 
-     foundation in full-stack web development, and DevOps practices. 
-     Experienced in building production-ready applications using React, Node.js, 
-     Express, Spring Boot, and cloud technologies like AWS and Docker.`,
-        `Vice Chairman of IEEE IAS Ruhuna Student Chapter with proven leadership in 
-     organizing tech events and mentoring peers. Passionate about solving real-world 
-     problems through clean code, automation, and data-driven solutions. Actively 
-     seeking software engineering internship opportunities to apply and expand my skills.`,
-    ],
+    `Computer Engineering undergraduate at the University of Ruhuna with a strong 
+ foundation in full-stack web development using React, Node.js, Express, and 
+ Spring Boot. Hands-on experience in creating web and mobile applications 
+ with real-world use cases. Familiar with DevOps fundamentals including 
+ Docker, Jenkins, and AWS through project-based learning.`,
+    `Currently exploring machine learning, artificial intelligence, and IoT 
+ systems through academic coursework and personal projects. Eager to apply 
+ new technologies and continuously improve my skills as a developer.`,
+    `Vice Chairman of IEEE IAS Ruhuna Student Chapter with proven leadership 
+ in organizing technical events, workshops, and career development programs. 
+ Strong communication and teamwork skills developed through active volunteering 
+ and event coordination. Actively seeking software engineering internship 
+ opportunities to grow and contribute to meaningful projects.`,
+],
     yearsLearning: 3,
     projectCount: 10,
     certCount: 5,
