@@ -271,8 +271,9 @@ export const projectsData = [
             challenges: [
             ],
             screenshots: [
-                "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=800&h=500&fit=crop&auto=format",
-                "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=800&h=500&fit=crop&auto=format",
+                "/concert admin.png",
+                "/concert login.png",
+                "/concert page.png",
             ],
         },
     },
