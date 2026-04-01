@@ -20,7 +20,7 @@ bio: [
     yearsLearning: 3,
     projectCount: 10,
     certCount: 5,
-    linesOfCode: 20000,
+    contribution: 200,
     resumeUrl: "/piyumal_sandeepa_CV.pdf",
     profileImage: "/profile.jpg",
     social: {

@@ -18,7 +18,7 @@ export default function About() {
     const stats = [
         { icon: <FaCode />, value: personalInfo.projectCount, label: "Projects" },
         { icon: <FaCertificate />, value: personalInfo.certCount, label: "Certificates" },
-        { icon: <FaTerminal />, value: personalInfo.linesOfCode, label: "Lines of Code" },
+        { icon: <FaTerminal />, value: personalInfo.contribution, label: "Contributions" },
     ];
 
     const infoItems = [
