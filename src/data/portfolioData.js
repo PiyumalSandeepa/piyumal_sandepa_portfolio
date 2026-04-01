@@ -8,20 +8,14 @@ export const personalInfo = {
     location: "Rathnapura, Sri Lanka",
     degree: "BSc (Hons) Computer Engineering",
     university: "University of Ruhuna",
-    bio: [
-    `Computer Engineering undergraduate at the University of Ruhuna with a strong 
- foundation in full-stack web development using React, Node.js, Express, and 
- Spring Boot. Hands-on experience in creating web and mobile applications 
- with real-world use cases. Familiar with DevOps fundamentals including 
- Docker, Jenkins, and AWS through project-based learning.`,
-    `Currently exploring machine learning, artificial intelligence, and IoT 
- systems through academic coursework and personal projects. Eager to apply 
- new technologies and continuously improve my skills as a developer.`,
-    `Vice Chairman of IEEE IAS Ruhuna Student Chapter with proven leadership 
- in organizing technical events, workshops, and career development programs. 
- Strong communication and teamwork skills developed through active volunteering 
- and event coordination. Actively seeking software engineering internship 
- opportunities to grow and contribute to meaningful projects.`,
+bio: [
+    `Computer Engineering undergraduate at the University of Ruhuna skilled in 
+ full-stack web development with React, Node.js, Express, and Spring Boot. 
+ Familiar with DevOps basics including Docker, Jenkins, and AWS. Currently 
+ exploring machine learning, AI, and IoT through coursework and hands-on projects.`,
+    `Vice Chairman of IEEE IAS Ruhuna Student Chapter with strong leadership, 
+ communication, and teamwork skills. Actively seeking software engineering 
+ internship opportunities.`,
 ],
     yearsLearning: 3,
     projectCount: 10,
